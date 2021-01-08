@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2013-02-22 01:28:01",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "specification",
+  "value",
+  "column_break_3",
+  "acceptance_formula"
+ ],
+ "fields": [
+  {
+   "fieldname": "specification",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parameter",
+   "oldfieldname": "specification",
+   "oldfieldtype": "Data",
+   "print_width": "200px",
+   "reqd": 1,
+   "width": "200px"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Acceptance Criteria",
+   "oldfieldname": "value",
+   "oldfieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Simple Python formula based on numeric Readings.<br> Example 1: <b>reading_1 &gt; 0.2 and reading_1 &lt; 0.5</b><br>\nExample 2: <b>(reading_1 + reading_2) / 2 &lt; 10</b>",
+   "fieldname": "acceptance_formula",
+   "fieldtype": "Code",
+   "in_list_view": 1,
+   "label": "Acceptance Criteria Formula"
+  }
+ ],
+ "idx": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2020-11-16 16:33:42.421842",
+ "modified_by": "Administrator",
+ "module": "Stock",
+ "name": "Item Quality Inspection Parameter",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
